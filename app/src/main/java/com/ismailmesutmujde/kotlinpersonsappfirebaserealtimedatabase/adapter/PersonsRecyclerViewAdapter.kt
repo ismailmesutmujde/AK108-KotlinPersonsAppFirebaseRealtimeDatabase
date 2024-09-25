@@ -12,11 +12,13 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.widget.PopupMenu
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.snackbar.Snackbar
+import com.google.firebase.database.DatabaseReference
 import com.ismailmesutmujde.kotlinpersonsappfirebaserealtimedatabase.R
 import com.ismailmesutmujde.kotlinpersonsappfirebaserealtimedatabase.model.Persons
 
 class PersonsRecyclerViewAdapter(private val mContext : Context,
-                                 private var personsList : List<Persons>)
+                                 private var personsList : List<Persons>,
+                                 private val refPersons:DatabaseReference)
     : RecyclerView.Adapter<PersonsRecyclerViewAdapter.CardDesignHolder>() {
 
     inner class CardDesignHolder(view: View) : RecyclerView.ViewHolder(view) {
@@ -50,12 +52,10 @@ class PersonsRecyclerViewAdapter(private val mContext : Context,
             popupMenu.setOnMenuItemClickListener { menuItem ->
                 when (menuItem.itemId) {
                     R.id.action_delete -> {
-                        Snackbar.make(
-                            holder.imageViewDot,
-                            "Delete ${person.person_name}?",
-                            Snackbar.LENGTH_SHORT
-                        )
+                        Snackbar.make(holder.imageViewDot,"Delete ${person.person_name}?", Snackbar.LENGTH_SHORT)
                             .setAction("YES") {
+
+                                refPersons.child(person.person_id!!).removeValue()
 
                             }.show()
                         true
@@ -88,6 +88,10 @@ class PersonsRecyclerViewAdapter(private val mContext : Context,
             val person_name = editTextPersonName.text.toString().trim()
             val person_phone = editTextPersonPhone.text.toString().trim()
 
+            val infoPerson = HashMap<String, Any>()
+            infoPerson.put("person_name", person_name)
+            infoPerson.put("person_phone", person_phone)
+            refPersons.child(person.person_id!!).updateChildren(infoPerson)
 
             Toast.makeText(mContext, "${person_name} - ${person_phone}", Toast.LENGTH_SHORT).show()
 

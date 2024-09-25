@@ -1,0 +1,106 @@
+{
+  "project_info": {
+    "project_number": "340161863672",
+    "firebase_url": "https://kotlinudemyfirebase-3ef9b-default-rtdb.firebaseio.com",
+    "project_id": "kotlinudemyfirebase-3ef9b",
+    "storage_bucket": "kotlinudemyfirebase-3ef9b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340161863672:android:eb7e8675b979154abf800d",
+        "android_client_info": {
+          "package_name": "com.ismailmesutmujde.kotlindictionaryappfirebaserealtimedatabase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiyY5OOw7ro7lj0kLiqO6IY7LyK2yMsQ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340161863672:android:583866227676adbebf800d",
+        "android_client_info": {
+          "package_name": "com.ismailmesutmujde.kotlininternetbasedtransactionsfirebaserealtimedatabase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiyY5OOw7ro7lj0kLiqO6IY7LyK2yMsQ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340161863672:android:80c4eb63c7a966d5bf800d",
+        "android_client_info": {
+          "package_name": "com.ismailmesutmujde.kotlinmoviesappfirebaserealtimedatabase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiyY5OOw7ro7lj0kLiqO6IY7LyK2yMsQ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340161863672:android:d3fd9751ad13fc5fbf800d",
+        "android_client_info": {
+          "package_name": "com.ismailmesutmujde.kotlinpersonsappfirebaserealtimedatabase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiyY5OOw7ro7lj0kLiqO6IY7LyK2yMsQ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340161863672:android:422aa7d71ca5612ebf800d",
+        "android_client_info": {
+          "package_name": "com.ismailmesutmujde.kotlinschoollessonscoreappfirebaserealtimedatabase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiyY5OOw7ro7lj0kLiqO6IY7LyK2yMsQ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

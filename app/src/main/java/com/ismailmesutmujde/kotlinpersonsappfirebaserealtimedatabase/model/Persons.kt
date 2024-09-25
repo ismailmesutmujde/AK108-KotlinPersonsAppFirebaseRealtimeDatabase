@@ -1,6 +1,9 @@
 package com.ismailmesutmujde.kotlinpersonsappfirebaserealtimedatabase.model
 
-data class Persons (var person_id : Int,
-                    var person_name : String,
-                    var person_phone : String) {
+import com.google.firebase.database.IgnoreExtraProperties
+
+@IgnoreExtraProperties
+data class Persons (var person_id : String? = "",
+                    var person_name : String? = "",
+                    var person_phone : String? = "") {
 }
