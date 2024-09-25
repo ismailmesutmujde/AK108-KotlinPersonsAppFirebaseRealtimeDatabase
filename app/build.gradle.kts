@@ -7,6 +7,10 @@ android {
     namespace = "com.ismailmesutmujde.kotlinpersonsappfirebaserealtimedatabase"
     compileSdk = 34
 
+    buildFeatures {
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "com.ismailmesutmujde.kotlinpersonsappfirebaserealtimedatabase"
         minSdk = 24
